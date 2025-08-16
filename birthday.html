@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lecture vidéo auto</title>
+  <link rel="stylesheet" href="birthday.css">
+</head>
+<body>
+
+  <video id="video" autoplay muted playsinline controls>
+    <source src="bob.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la vidéo HTML5.
+  </video>
+
+  <script>
+    // Tentative de lecture avec le son dès que la page est chargée
+    window.addEventListener('load', () => {
+      const video = document.getElementById('video');
+      video.muted = false; // on retire mute
+      video.play().catch(err => {
+        console.log("Lecture auto avec son bloquée :", err);
+      });
+    });
+  </script>
+
+</body>
+</html>

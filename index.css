@@ -1,0 +1,39 @@
+@media only screen and (max-width: 600px) {
+    
+    button {
+        background-color: #e086c3;
+        color: #f0f8ff;
+        border: none;
+        border-radius: 8px;
+        padding: 20px 40px;
+        font-size: 19px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        margin-top: 80px;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        background-color: #9b0d4d;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url("b38407308b3f120ea6232677b0914ff7.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    }
+    
+    
+    
